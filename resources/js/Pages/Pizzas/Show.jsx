@@ -26,7 +26,7 @@ export default function Show({ pizza }) {
             <Head title={'Order #' + pizza.id} />
             <PizzaStatus currentStatus={pizza.status}></PizzaStatus>
             <div className="text-center mt-4">
-                <p className="text-lg">Last updated <span className="underline font-semibold">{pizza.last_updated}</span></p>
+                <p className="text-lg">{pizza.chef} started {pizza.status.toLowerCase()} your order <span className="underline font-semibold">{pizza.last_updated}</span></p>
             </div>
         </div>
     );
